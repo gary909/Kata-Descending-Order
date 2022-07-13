@@ -1,5 +1,9 @@
 function descendingOrder(n) {
-    //...
+    let myNum = n.toString().split("");
+    myNum = myNum.sort(function (a, b) {
+        return b - a;
+    });
+    return parseInt(myNum.join(''), 10);
 }
 
 console.log(descendingOrder(0)); // 0
